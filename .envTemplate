@@ -1,4 +1,4 @@
-USER=bonet
-PASSWORD=Diogo1234
-SERVER=bonet-server.database.windows.net
-DATABASE=hiscaredb
+USER=
+PASSWORD=
+SERVER=
+DATABASE=

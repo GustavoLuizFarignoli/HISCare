@@ -1,12 +1,13 @@
+require('dotenv').config();
 // dbconfig.js
 const sql = require('mssql');
 
 // Configuração para a conexão com o banco de dados Azure SQL
 const config = {
-    user: 'seu-usuario', // Substitua pelo seu usuário do Azure SQL
-    password: 'sua-senha', // Substitua pela sua senha
-    server: 'crudgustavosql.database.windows.net', // Substitua pelo nome do seu servidor
-    database: 'hiscaresql', // Substitua pelo nome do seu banco de dados
+    user: process.env.USER, // Substitua pelo seu usuário do Azure SQL
+    password: process.env.PASSWORD, // Substitua pela sua senha
+    server: process.env.SERVER, // Substitua pelo nome do seu servidor
+    database: process.env.DATABASE, // Substitua pelo nome do seu banco de dados
     options: {
         encrypt: true, // Necessário para Azure SQL
         enableArithAbort: true,
